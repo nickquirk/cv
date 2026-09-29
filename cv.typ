@@ -24,7 +24,7 @@
   ("Backend", "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
   ("Testing", "Jest, Go Testing, Cypress"),
   ("DevOps, cloud & monitoring", "Docker, Kubernetes, GCP, DataDog, Jenkins, Cloud Run"),
-  ("AI tools", "Claude Code, Google AI Studio, OpenCode CLI, PyTorch ML library"),
+  ("AI tools", "Claude Code, Google Antigravity, OpenCode CLI, PyTorch ML library"),
   ("Other", "Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
 )
 
@@ -44,7 +44,6 @@
 
 #section("Projects")
 
-// TODO: point repo/url at the actual project repos.
 #project(
   "Life Dashboard",
   url: "https://frontend-835639357459.europe-west2.run.app/",
