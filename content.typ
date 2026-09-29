@@ -42,7 +42,6 @@
         [*Automated financial reporting* with an internal web scraping and dashboard tool, automating a painful manual procedure and saving the Director of Finance around 8 hours monthly.],
         [Built two internal *Next.js* tools on the *Gemini API*, before CLI coding agents were common: a *README generator* that scans a codebase and writes docs in a standard format, used to backfill *13 undocumented codebases* and now the team default, and a *unit test generator* whose tests were merged into *5 codebases*. Teams estimate around 5 hours saved per codebase; I was asked to present both to the wider engineering team.],
         [*Raised test coverage* across the critical checkout codebase with unit, integration and end-to-end tests to protect payment reliability.],
-        [Elected *Development Team Representative* on the Employee Forum.],
       ),
     ),
   ),
