@@ -26,7 +26,7 @@
     backend: (label: "Backend", items: "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
     testing: (label: "Testing", items: "Jest, Go Testing, Cypress"),
     devops: (label: "DevOps, cloud & monitoring", items: "Docker, Kubernetes, GCP, DataDog, Jenkins, Cloud Run"),
-    other: (label: "Other", items: "Claude Code, Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
+    other: (label: "Other", items: "Claude Code, Gemini API, Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
   ),
 
   jobs: (
@@ -40,9 +40,9 @@
         [Extended Checkout.com's fraud scoring with a pluggable *Fraud Rule Engine* (PHP, Strategy pattern, DI-registered rules) that attaches six risk signals (deposit orders, high-risk tickets, same-day and near-date departures, suppliers) to every payment request, letting the fraud team flag or block on any signal from the CKO dashboard without code changes.],
         [Designed and deployed a *user journey tracking tool* for the checkout flow, now used daily and reducing the Product Owner's analysis workload by 10 hours monthly.],
         [*Automated financial reporting* with an internal web scraping and dashboard tool, automating a painful manual procedure and saving the Director of Finance around 8 hours monthly.],
-        [Introduced *AI-assisted development tooling* (documentation generation, auto test writer) into team workflows, saving around 5 hours per project.],
+        [Built two internal *Next.js* tools on the *Gemini API*, before CLI coding agents were common: a *README generator* that scans a codebase and writes docs in a standard format, used to backfill *13 undocumented codebases* and now the team default, and a *unit test generator* whose tests were merged into *5 codebases*. Teams estimate around 5 hours saved per codebase; I was asked to present both to the wider engineering team.],
         [*Raised test coverage* across the critical checkout codebase with unit, integration and end-to-end tests to protect payment reliability.],
-        [Elected *Development Team Representative* on the Employee Forum; ran knowledge-sharing sessions on AI tooling as the team adopted it.],
+        [Elected *Development Team Representative* on the Employee Forum.],
       ),
     ),
   ),
