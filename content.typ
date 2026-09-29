@@ -36,10 +36,10 @@
       org: "Attraction Tickets LTD",
       dates: "May 2023 – Present",
       bullets: (
-        [Build and operate full-stack features end-to-end in the *Customer Success Team* (PHP, Golang, TypeScript), owning the lifecycle from conception through to deployment on production (Jenkins, GCP).],
+        [Build and operate full-stack features end-to-end in the *Customer Success Team* (PHP, Golang, TypeScript), owning the lifecycle from conception through to deployment on production (Jenkins, GCP, Cloud Run).],
         [Implemented *Payment Links* to ensure PCI compliance was followed when customer payments were taken over the phone. This was a complex process undertaken across three codebases.],
         [Developed a custom *Fraud Rule Engine* for finer-grained identification of fraudulent payments, improving detection rates and cutting manual review time for stakeholders.],
-        [Designed and deployed a user journey tracking tool for the checkout flow, now used daily and reducing the Product Owner's analysis workload by 10 hours monthly.],
+        [Designed and deployed a *user journey tracking tool *for the checkout flow, now used daily and reducing the Product Owner's analysis workload by 10 hours monthly.],
         [Automated financial reporting with an internal web scraping and dashboard tool, automating a painful manual procedure and saving the Director of Finance around 8 hours monthly.],
         [Introduced *AI-assisted development tooling* (documentation generation, auto test writer) into team workflows, saving around 5 hours per project.],
         [*Raised test coverage* across the critical checkout codebase with unit, integration and end-to-end tests to protect payment reliability.],
@@ -50,10 +50,10 @@
   ),
 
   projects: (
-    // TODO: point repo/url at the actual project repos.
     dashboard: (
       name: "Life Dashboard",
-      repo: "https://github.com/nickquirk",
+      url: "https://frontend-835639357459.europe-west2.run.app/",
+      repo: "https://github.com/nickquirk/life-dashboard-server",
       stack: "Go, GORM, MySQL, Next.js 16, TypeScript, TanStack Query, Tailwind, GCP",
       bullets: (
         [Designed and shipped a *full-stack productivity platform* that unifies Google Tasks and Calendar into a single drag-and-drop planning surface, deployed to *GCP Cloud Run* against *Cloud SQL* via a *Cloud Build CI/CD pipeline* with automated migration jobs.],
@@ -64,7 +64,7 @@
     ),
     audio: (
       name: "Generative Audio Streamer",
-      url: "https://github.com/nickquirk",
+      url: "https://github.com/nickquirk/generative-audio-streamer",
       stack: "Python, PyTorch, FastAPI, Apache Kafka, Tone.js, Docker",
       bullets: (
         [Built a *decoupled streaming pipeline* where *Apache Kafka* buffers generated musical events and *Server-Sent Events (SSE)* push them to the browser, keeping playback continuous while generation runs asynchronously upstream.],
