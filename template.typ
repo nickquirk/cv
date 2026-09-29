@@ -36,7 +36,7 @@
   #contact
 ]
 
-#let section(title) = block(above: 1.3em, below: 0.6em, stack(
+#let section(title) = block(sticky: true, above: 1.3em, below: 0.6em, stack(
   spacing: 3pt,
   text(font: heading-font, size: 13pt, fill: accent, upper(title)),
   line(length: 100%, stroke: 0.8pt + accent),
@@ -52,16 +52,16 @@
 )
 
 // Employment entry: Title (dates) : Company
-#let job(title, dates, org) = block(above: 0.8em, below: 0.4em)[
+#let job(title, dates, org) = block(sticky: true, above: 0.8em, below: 0.4em)[
   #strong(title) (#dates) : #emph(org)
 ]
 
 // Work-history entry: Title: Organisation (dates)
-#let entry(title, org, dates) = block(above: 1em, below: 0.4em)[
+#let entry(title, org, dates) = block(sticky: true, above: 1em, below: 0.4em)[
   #strong(title + ":") #emph(org) (#dates)
 ]
 
-#let project(name, stack: "", url: none, repo: none) = block(above: 1em, below: 0.5em)[
+#let project(name, stack: "", url: none, repo: none) = block(sticky: true, above: 1em, below: 0.5em)[
   #if url != none { link(url, strong(upper(name))) } else { strong(upper(name)) }
   #if repo != none [| #link(repo)[github]]
   | #strong[Stack:] #emph(stack)
