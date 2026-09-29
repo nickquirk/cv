@@ -12,9 +12,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: typst-community/setup-typst@v4
+      - uses: typst-community/setup-typst@v6
 
       - name: Compile general CV
         run: typst compile --font-path fonts cv.typ Nick-Quirk-CV.pdf
@@ -24,7 +24,7 @@ jobs:
           typst compile --font-path fonts --input focus=audio cv.typ Nick-Quirk-CV-audio.pdf
           typst compile --font-path fonts --input focus=backend cv.typ Nick-Quirk-CV-backend.pdf
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: cv
           path: '*.pdf'
