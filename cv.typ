@@ -59,7 +59,7 @@
 
 #project(
   "Generative Audio Streamer",
-  url: github,
+  url: github + "/generative-audio-streamer",
   stack: "Python, PyTorch, FastAPI, Apache Kafka, Tone.js, Docker",
 )
 
