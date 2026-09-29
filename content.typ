@@ -80,7 +80,7 @@
     events: (
       title: "Events Operations",
       org: "UK Festival Circuit",
-      dates: "May 2017 – May 2023",
+      dates: "May 2017 – Sept 2022",
       bullets: (
         [Orchestrated operational logistics for up to 50 traders at large-scale UK events (20,000+ attendees), ensuring compliance and safety during the event.],
       ),
