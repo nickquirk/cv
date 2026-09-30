@@ -2,5 +2,4 @@
   "tinymist.fontPaths": ["${workspaceFolder}/fonts"],
   "tinymist.formatterMode": "typstyle",
   "files.insertFinalNewline": true,
-  // "tinymist.typstExtraArgs": ["--input", "focus=backend"] // for tailored variant
 }

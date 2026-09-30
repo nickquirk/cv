@@ -16,13 +16,8 @@ jobs:
 
       - uses: typst-community/setup-typst@v5
 
-      - name: Compile general CV
-        run: typst compile --font-path fonts cv.typ Nick-Quirk-CV.pdf
-
-      - name: Compile variants
-        run: |
-          typst compile --font-path fonts --input focus=audio cv.typ Nick-Quirk-CV-audio.pdf
-          typst compile --font-path fonts --input focus=backend cv.typ Nick-Quirk-CV-backend.pdf
+      - name: Compile CV and role variants
+        run: sh build.sh
 
       - uses: actions/upload-artifact@v6
         with:

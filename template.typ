@@ -131,14 +131,17 @@
   let projects = entries(data.projects)
   if projects.len() > 0 {
     section("Projects")
+    // Keep each project (heading + bullets) together on one page.
     for p in projects {
-      project(
-        p.name,
-        stack: p.stack,
-        url: p.at("url", default: none),
-        repo: p.at("repo", default: none),
-      )
-      list(..p.bullets)
+      block(breakable: false, {
+        project(
+          p.name,
+          stack: p.stack,
+          url: p.at("url", default: none),
+          repo: p.at("repo", default: none),
+        )
+        list(..p.bullets)
+      })
     }
   }
 
