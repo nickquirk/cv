@@ -17,14 +17,14 @@
   ),
 
   profile: [
-    Software engineer with 3+ years building backend-heavy features in *Go*, *PHP* and *TypeScript* on an international e-commerce platform, mostly around payments: PCI-compliant payment links, a fraud rule engine, checkout analytics. Before that, an MSc in *Sound and Music for Interactive Games* and freelance game audio work, including technical audio on the arena shooter Diabotical.
-  ],
+  Full-stack software engineer with 3+ years on an international e-commerce platform, building payment and checkout systems in *Go*, *PHP* and *TypeScript*. I split my time between the legacy PHP monolith our sales agents work in every day and new Go services and internal tools. I came to software from audio, including technical sound work on the arena shooter Diabotical.
+],
 
 
   education: (
     ga: [General Assembly, London, *Software Engineering Immersive* (Sept 2022 – Dec 2022)],
-    leeds: [Leeds Beckett University, *Sound and Music for Interactive Games MSc* (Sept 2013 – Sept 2014)],
-    uwe: [University of the West of England, *Audio and Music Technology BSc (Hons)* (Sept 2009 – July 2012)],
+    leeds: [Leeds Beckett University, *Sound and Music for Interactive Games MSc (Merit)* (Sept 2013 – Sept 2014)],
+    uwe: [University of the West of England, *Audio and Music Technology BSc (2:1 Hons)* (Sept 2009 – July 2012)],
   ),
 
   jobs: (
@@ -33,13 +33,14 @@
       org: "Attraction Tickets LTD",
       dates: "May 2023 – Present",
       bullets: (
-        [Build and operate full-stack features in the Customer Success Team (PHP, Go, TypeScript) from conception to production (Jenkins, GCP, Cloud Run), including *upgrading a critical legacy codebase* our frontline teams use daily.],
-        [Integrated  *Payment Links* so phone sales no longer involve agents keying in card numbers: agents email customers a *Checkout.com* hosted payment link (3DS enforced, 15-minute expiry). Built across the legacy *PHP/Drupal 6* backend and developed a new UI on the frontend, with duplicate-link prevention and webhook-driven status tracking (paid, flagged, voided). Card data is now out of agent workflows entirely, shrinking our PCI scope.],
-        [Extended Checkout.com's fraud scoring with a pluggable *Fraud Rule Engine* (PHP, Strategy pattern, DI-registered rules) that attaches six risk signals (deposit orders, high-risk tickets, same-day and near-date departures, suppliers) to every payment request, letting the Operations team flag or block on any signal from the CKO dashboard without code changes.],
-        [Designed and deployed a *user journey tracking tool* for the checkout flow, now used daily and reducing the Product Owner's analysis workload by 10 hours monthly.],
-        [*Automated financial reporting* with an internal web scraping and dashboard tool, automating a painful manual procedure and saving the Director of Finance around 8 hours monthly.],
-        [Built two internal *Next.js* tools on the *Gemini API*, before CLI coding agents were common: a *README generator* that scans a codebase and writes docs in a standard format, used to backfill *13 undocumented codebases* and now the team default, and a *unit test generator* whose tests were merged into *5 codebases*. Teams estimate around 5 hours saved per codebase; I was asked to present both to the wider engineering team.],
-        [*Raised test coverage* across the critical checkout codebase using *Cypress and Jest* with 37 unit, integration and end-to-end tests to protect payment reliability. Used *Gherkin* to write user stories with our Product Owner],
+        [Build and operate full-stack features in the Customer Success team in *Go*, *PHP* and *TypeScript* (*React*\/*Next.js*), from spec to production, tested with *testify*, *Jest* and *Cypress*. Ship via *Docker*, *Jenkins* and *Bitbucket Pipelines* to *GCP (Cloud Run, GKE/Kubernetes)*, and debug staging and production with *DataDog* and *k9s*.],
+        [Integrated *Checkout.com* hosted *Payment Links* so phone-sales agents email customers a 3DS-enforced, 15-minute link instead of keying in card numbers. Built across the legacy PHP backend and a new agent UI, with duplicate-link prevention and webhook-driven status tracking. Card data is now out of agent workflows entirely, shrinking our PCI scope.],
+        [Extended Checkout.com's fraud scoring with a pluggable *Fraud Rule Engine* (PHP, Strategy pattern, DI-registered rules) that attaches six risk signals, such as deposit orders and same-day departures, to every payment, so Operations can flag or block on any signal without code changes.],
+        [Built *agent-facing tools* end to end in our legacy *PHP* monolith, writing both the APIs and the UI. 30–40 sales and support agents use them daily to act on payment and risk data mid-call: decline diagnostics, a scored risk panel explaining each triggered rule, customer booking history and an order-recovery review workflow.],
+        [Built *Wolverine*, a *Go* payment-health service on Cloud Run. The dev team pulls decline-reason, 3DS and checkout-error breakdowns from *Slack* slash commands, and project leads and directors get a daily *SendGrid* report comparing capture rate against the 7-day average. Data comes from the *Checkout.com API* and *BigQuery*.],
+        [Built *Spiral*, a *Go* worker on *GKE* that consumes cart-abandonment events from *RabbitMQ* and forwards them by region to *Bloomreach*, which emails customers a recovery prompt 30 minutes after they abandon a cart. Traced with *DataDog* via Orchestrion and unit-tested with *testify* and *mockery*.],
+        [Built *Cyclops*, a checkout debugging tool (*Next.js*\/*TypeScript* frontend, *Go* API over *BigQuery*, on Cloud Run) that reconstructs any order's checkout as an event-by-event timeline with timings between steps, and shows what share of orders hit a given event, such as a payment failure, over a date range. The Product Owner uses it daily saving around 10 hours of analysis a month.],
+        [Built two internal *Next.js* tools on the *Gemini API* before CLI coding agents were common: a *README generator*, used to backfill *13 undocumented codebases* and now the team default, and a *unit test generator* whose tests were merged into *5 codebases*. Teams estimate around 5 hours saved per codebase, and I presented both to the wider engineering team.],
       ),
     ),
   ),
@@ -53,7 +54,7 @@
       bullets: (
         [Designed and shipped a *full-stack productivity platform* that unifies Google Tasks and Calendar into a single drag-and-drop planning surface, deployed to *GCP Cloud Run* against *Cloud SQL* via a *Cloud Build CI/CD pipeline* with automated migration jobs.],
         [Secured the platform end-to-end: *OAuth2* login, *AES-256-GCM encryption* of persisted provider tokens, HTTP-only *JWT* session cookies with hashed refresh-token rotation, and *OIDC*-validated service requests backed by *GCP Secret Manager*.],
-        [Structured the Go service around *Onion Architecture* with interface-driven repositories and *Uber Dig dependency injection*, so it's covered by *unit and integration tests* against mocked dependencies; the frontend is tested with *Jest and React Testing Library*.],
+        [Structured the Go service around *Onion Architecture* with interface-driven repositories and *Uber Dig dependency injection*, with *unit and integration tests* against mocked dependencies; the frontend is tested with *Jest and React Testing Library*.],
       ),
     ),
     audio: (
@@ -74,7 +75,7 @@
       org: "UK Festival Circuit",
       dates: "July 2017 – Sept 2022",
       bullets: (
-        [Orchestrated operational logistics for up to 50 traders at UK festivals of 20,000+ attendees, including Glastonbury and CarFest, ensuring compliance and safety during the event.],
+        [Ran trader operations at UK festivals of 20,000+ attendees, including Glastonbury and CarFest, managing up to 50 traders per event on compliance and site safety.],
       ),
     ),
     canfi: (
@@ -83,7 +84,7 @@
       dates: "August 2019 – Sept 2022",
       summary: [Founded alongside my events work to solve a problem I kept seeing on site: traders unable to take card payments because public mobile networks collapse under festival crowd loads. Covid cancelled the 2020–21 season before the full system was deployed.],
       bullets: (
-        [Designed and built the full hardware stack. A solar-powered, battery-backed rig housed in four oil drums, feeding a *Ubiquiti mesh network* that shared a single high-gain *4G uplink*.],
+        [Designed and built the full hardware stack: a solar-powered, battery-backed rig housed in four oil drums, feeding a *Ubiquiti mesh network* that shared a single high-gain *4G uplink*.],
         [Field-tested components independently, including providing Wi-Fi to traders at smaller events and running a redundancy network at Glastonbury's Mandela Bar.],
       ),
     ),
