@@ -27,8 +27,6 @@
     uwe: [University of the West of England, *Audio and Music Technology BSc (Hons)* (Sept 2009 – July 2012)],
   ),
 
-  skills: (:),
-
   jobs: (
     attraction: (
       title: "Software Engineer",

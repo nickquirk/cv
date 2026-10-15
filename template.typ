@@ -119,12 +119,6 @@
     education.join(linebreak())
   }
 
-  let skills = entries(data.skills)
-  if skills.len() > 0 {
-    section("Skills")
-    skills-table(skills)
-  }
-
   let jobs = entries(data.jobs)
   if jobs.len() > 0 {
     section("Employment")
