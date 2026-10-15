@@ -16,9 +16,9 @@
   //   jobs: (attraction: (title: "Full-stack Software Engineer")),
   //
   // Add a bullet to an entry (note the trailing comma for a one-item array):
-  //   jobs: (attraction: (bullets: base.jobs.attraction.bullets + (
-  //     [New bullet about ...],
-  //   ))),
+    jobs: (attraction: (bullets: base.jobs.attraction.bullets + (
+      [Designed, built and deployed three production *Go* services solo, using layered architecture, *uber/dig* DI, *testify* with *mockery* tests and *Bitbucket Pipelines* to *GKE* and *Cloud Run*.],
+    ))),
   //
   // Add a new entry (it appears after the existing ones):
   //   projects: (newthing: (name: "...", stack: "...", bullets: ([...],))),
