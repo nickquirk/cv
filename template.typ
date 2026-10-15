@@ -113,6 +113,12 @@
     par(justify: true, data.profile)
   }
 
+  let education = entries(data.education)
+  if education.len() > 0 {
+    section("Education")
+    education.join(linebreak())
+  }
+
   let skills = entries(data.skills)
   if skills.len() > 0 {
     section("Skills")
@@ -156,12 +162,6 @@
     }
     v(0.4em)
     align(center, emph[For full career breakdown visit my #link(c.linkedin.url)[LinkedIn]])
-  }
-
-  let education = entries(data.education)
-  if education.len() > 0 {
-    section("Education")
-    education.join(linebreak())
   }
 
   if data.interests != none {

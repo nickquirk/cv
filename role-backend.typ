@@ -25,7 +25,7 @@
 ))
 
 // Reorder entries: move the backend skills row to the top.
-#let data = data + (skills: reorder(data.skills, "backend", "languages"))
+// #let data = data + (skills: reorder(data.skills, "backend", "languages"))
 
 #show: cv.with(name: data.name)
 #render(data)

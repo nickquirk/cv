@@ -20,14 +20,14 @@
     Software engineer with 3+ years building backend-heavy features in *Go*, *PHP* and *TypeScript* on an international e-commerce platform, mostly around payments: PCI-compliant payment links, a fraud rule engine, checkout analytics. Before that, an MSc in *Sound and Music for Interactive Games* and freelance game audio work, including technical audio on the arena shooter Diabotical.
   ],
 
-  skills: (
-    languages: (label: "Programming languages", items: "Go, PHP, TypeScript, JavaScript, Python (PyTorch)"),
-    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query"),
-    backend: (label: "Backend", items: "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
-    testing: (label: "Testing", items: "Jest, Go Testing, Cypress"),
-    devops: (label: "DevOps, cloud & monitoring", items: "Docker, Kubernetes, GCP, DataDog, Jenkins, Cloud Run"),
-    other: (label: "Other", items: "Claude Code, Gemini API, Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
+
+  education: (
+    ga: [General Assembly, London, *Software Engineering Immersive* (Sept 2022 – Dec 2022)],
+    leeds: [Leeds Beckett University, *Sound and Music for Interactive Games MSc* (Sept 2013 – Sept 2014)],
+    uwe: [University of the West of England, *Audio and Music Technology BSc (Hons)* (Sept 2009 – July 2012)],
   ),
+
+  skills: (:),
 
   jobs: (
     attraction: (
@@ -99,13 +99,6 @@
         [Created original in-game audio assets and music.],
       ),
     ),
-  ),
-
-  education: (
-    cs50: [Harvard University (online), *CS50: Introduction to Computer Science* (Jan 2023 – Sept 2023)],
-    ga: [General Assembly, London, *Software Engineering Immersive* (Sept 2022 – Dec 2022)],
-    leeds: [Leeds Beckett University, *Sound and Music for Interactive Games MSc* (Sept 2013 – Sept 2014)],
-    uwe: [University of the West of England, *Audio and Music Technology BSc (Hons)* (Sept 2009 – July 2012)],
   ),
 
   interests: [
