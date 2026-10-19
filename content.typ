@@ -3,6 +3,11 @@
 //
 // Each entry has an id (e.g. `attraction`, `dashboard`) that role files
 // use to override or hide it. Entries render in the order written here.
+// 
+// Put skills back in
+// Ask so fucking what after each bullet - provide some monetary impact if poss
+// Put in AI experince 
+// 
 
 #let base = (
   name: "Nick Quirk",
@@ -17,7 +22,7 @@
   ),
 
   profile: [
-  Full-stack software engineer with 3+ years on an international e-commerce platform, building payment and checkout systems in *Go*, *PHP* and *TypeScript*. I split my time between the legacy PHP monolith our sales agents work in every day and new Go services and internal tools. I came to software from audio, including technical sound work on the arena shooter Diabotical.
+  Full-stack software engineer with 3+ years on an international e-commerce platform, building payment and checkout systems in *Go*, *PHP* and *TypeScript*. I split my time between two legacy codebases our sales agents work in every day and new Go services and internal tools. I came to software from audio, including technical sound work on the arena shooter Diabotical.
 ],
 
 
@@ -101,6 +106,6 @@
   ),
 
   interests: [
-    *Music* — I compose electronic music and also present a radio show. Recently I've been exploring music live coding platforms like Strudel and Sonic Pi.
+    *Music* — I compose electronic music and have presented a radio show in the past. *Fitness* I like to keep fit and recently completed my first event, the Victoria Falls half-marathon in Zimbabwe. It was an unreal experience and look forward to more events in the future. 
   ],
 )
