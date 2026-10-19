@@ -26,6 +26,15 @@
 ],
 
 
+  skills: (
+    languages: (label: "Programming languages", items: "Go, PHP, TypeScript, JavaScript, Python (PyTorch)"),
+    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query"),
+    backend: (label: "Backend", items: "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
+    testing: (label: "Testing", items: "Jest, Go Testing, Cypress"),
+    devops: (label: "DevOps, cloud & monitoring", items: "Docker, Kubernetes, GCP, DataDog, Jenkins, Cloud Run"),
+    other: (label: "Other", items: "Claude Code, Gemini API, Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
+  ),
+
   education: (
     ga: [General Assembly, London, *Software Engineering Immersive* (Sep 2022 – Dec 2022)],
     leeds: [Leeds Beckett University, *Sound and Music for Interactive Games MSc (Merit)* (Sep 2013 – Sep 2014)],

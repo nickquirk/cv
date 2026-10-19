@@ -113,6 +113,12 @@
     par(justify: true, data.profile)
   }
 
+  let skills = entries(data.skills)
+  if skills.len() > 0 {
+    section("Skills")
+    skills-table(skills)
+  }
+
   let education = entries(data.education)
   if education.len() > 0 {
     section("Education")
