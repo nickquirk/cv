@@ -25,14 +25,14 @@
   Full-stack software engineer with 3+ years on an international e-commerce platform, building payment and checkout systems in *Go*, *PHP* and *TypeScript*. I split my time between two legacy codebases our sales agents work in every day and new Go services and internal tools. I came to software from audio, including technical sound work on the arena shooter Diabotical.
 ],
 
-
   skills: (
     languages: (label: "Programming languages", items: "Go, PHP, TypeScript, JavaScript, Python (PyTorch)"),
-    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query"),
+    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query, Symphony"),
     backend: (label: "Backend", items: "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
-    testing: (label: "Testing", items: "Jest, Go Testing, Cypress"),
-    devops: (label: "DevOps, cloud & monitoring", items: "Docker, Kubernetes, GCP, DataDog, Jenkins, Cloud Run"),
-    other: (label: "Other", items: "Claude Code, Gemini API, Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
+    testing: (label: "Testing", items: "Jest, Go Testing Lib, Testify, Mockery, Cypress"),
+    devops: (label: "DevOps, cloud & monitoring", items: "Docker, K9S, GCP, DataDog, Jenkins, Cloud Run"),
+    ai: (label: "Ai Tools", items: "Claude Code, Google Antigravity, Google Gemini, Google Vertex AI"),
+    other: (label: "Other", items: "Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
   ),
 
   education: (
