@@ -27,11 +27,11 @@
 
   skills: (
     languages: (label: "Programming languages", items: "Go, PHP, TypeScript, JavaScript, Python (PyTorch)"),
-    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query, Symphony"),
+    frontend: (label: "Frontend", items: "Next.js, React, TailwindCSS, Sass, TanStack Query"),
     backend: (label: "Backend", items: "GORM, MySQL, SQLite, Node.js, Kafka, RabbitMQ, JWT, OAuth2"),
-    testing: (label: "Testing", items: "Jest, Go Testing Lib, Testify, Mockery, Cypress"),
+    testing: (label: "Testing", items: "Jest, Go testing, Testify, Mockery, Cypress"),
     devops: (label: "DevOps, cloud & monitoring", items: "Docker, K9S, GCP, DataDog, Jenkins, Cloud Run"),
-    ai: (label: "Ai Tools", items: "Claude Code, Google Antigravity, Google Gemini, Google Vertex AI"),
+    ai: (label: "Ai tools", items: "Claude Code, Google Antigravity, Google Gemini, Google Vertex AI"),
     other: (label: "Other", items: "Git/Bitbucket, Postman, Max/MSP, PureData, Unreal Engine, Figma"),
   ),
 
@@ -48,7 +48,7 @@
       dates: "May 2023 – Present",
       bullets: (
         [Build and operate full-stack features for the Customer Success team in *Go*, *PHP* and *TypeScript* (*React*\/*Next.js*), from spec to production, tested with *testify*, *Jest* and *Cypress*. Ship via *Docker*, *Jenkins* and *Bitbucket Pipelines* to *GCP (Cloud Run, GKE/Kubernetes)*, and debug staging and production with *DataDog* and *k9s*.],
-        [Took card numbers out of phone sales by integrating *Checkout.com* hosted *Payment Links* into the legacy *PHP* backend and a new agent UI: agents email customers a 3DS-enforced, 15-minute link, with duplicate-link prevention and webhook-driven status tracking, shrinking our PCI scope.],
+        [Took card numbers out of phone sales by integrating *Checkout.com* hosted *Payment Links* into the legacy *PHP* backend and a new agent UI: agents email customers a 3DS-enforced, 15-minute link, with duplicate-link prevention and webhook-driven status tracking. In its first seven months customers paid nearly 8,800 links worth over £6m, with no agent handling card details, shrinking our PCI scope.],
         [Extended Checkout.com's fraud scoring with a pluggable *Fraud Rule Engine* (PHP, Strategy pattern, DI-registered rules) that attaches six risk signals, such as deposit orders and same-day departures, to every payment, so Operations can flag or block on any signal without code changes.],
         [Built *agent-facing tools* end to end in our legacy codebases, writing both the APIs and the UI. 30–40 sales and support agents use them daily to act on payment and risk data mid-call: decline diagnostics, a scored risk panel explaining each triggered rule, customer booking history and an order-recovery review workflow.],
         [Extended Wolverine, a *Go* payment-health service on Cloud Run. Originally just a simple report I extended so dev team can pull decline-reason, 3DS and checkout-error breakdowns from *Slack slash commands*, and project leads and directors get a daily *SendGrid* report comparing capture rate against the 7-day average. Data comes from the *Checkout.com API* and *BigQuery*.],
